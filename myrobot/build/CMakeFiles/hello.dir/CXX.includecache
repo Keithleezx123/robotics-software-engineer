@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ubuntu/workspace/myrobot/script/hello.cpp
+/home/ubuntu/robotics-software-engineer/myrobot/script/hello.cpp
 gazebo/gazebo.hh
 -
 

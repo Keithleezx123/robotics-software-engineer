@@ -1,4 +1,4 @@
-# Install script for directory: /home/ubuntu/workspace/myrobot
+# Install script for directory: /home/ubuntu/robotics-software-engineer/myrobot
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ubuntu/workspace/myrobot/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ubuntu/robotics-software-engineer/myrobot/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
