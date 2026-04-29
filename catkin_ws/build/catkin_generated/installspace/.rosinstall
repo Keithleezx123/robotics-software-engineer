@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/ubuntu/robotics-software-engineer/catkin_ws/install/setup.sh
