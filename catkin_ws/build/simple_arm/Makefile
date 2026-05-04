@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+simple_arm/CMakeFiles/simple_mover.dir/rule:
+	cd /home/ubuntu/robotics-software-engineer/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 simple_arm/CMakeFiles/simple_mover.dir/rule
+.PHONY : simple_arm/CMakeFiles/simple_mover.dir/rule
+
+# Convenience name for target.
+simple_mover: simple_arm/CMakeFiles/simple_mover.dir/rule
+
+.PHONY : simple_mover
+
+# fast build rule for target.
+simple_mover/fast:
+	cd /home/ubuntu/robotics-software-engineer/catkin_ws/build && $(MAKE) -f simple_arm/CMakeFiles/simple_mover.dir/build.make simple_arm/CMakeFiles/simple_mover.dir/build
+.PHONY : simple_mover/fast
+
+# Convenience name for target.
 simple_arm/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/rule:
 	cd /home/ubuntu/robotics-software-engineer/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 simple_arm/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/rule
 .PHONY : simple_arm/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/rule
@@ -467,6 +482,33 @@ rosgraph_msgs_generate_messages_eus/fast:
 	cd /home/ubuntu/robotics-software-engineer/catkin_ws/build && $(MAKE) -f simple_arm/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make simple_arm/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
 
+src/simple_mover.o: src/simple_mover.cpp.o
+
+.PHONY : src/simple_mover.o
+
+# target to build an object file
+src/simple_mover.cpp.o:
+	cd /home/ubuntu/robotics-software-engineer/catkin_ws/build && $(MAKE) -f simple_arm/CMakeFiles/simple_mover.dir/build.make simple_arm/CMakeFiles/simple_mover.dir/src/simple_mover.cpp.o
+.PHONY : src/simple_mover.cpp.o
+
+src/simple_mover.i: src/simple_mover.cpp.i
+
+.PHONY : src/simple_mover.i
+
+# target to preprocess a source file
+src/simple_mover.cpp.i:
+	cd /home/ubuntu/robotics-software-engineer/catkin_ws/build && $(MAKE) -f simple_arm/CMakeFiles/simple_mover.dir/build.make simple_arm/CMakeFiles/simple_mover.dir/src/simple_mover.cpp.i
+.PHONY : src/simple_mover.cpp.i
+
+src/simple_mover.s: src/simple_mover.cpp.s
+
+.PHONY : src/simple_mover.s
+
+# target to generate assembly for a file
+src/simple_mover.cpp.s:
+	cd /home/ubuntu/robotics-software-engineer/catkin_ws/build && $(MAKE) -f simple_arm/CMakeFiles/simple_mover.dir/build.make simple_arm/CMakeFiles/simple_mover.dir/src/simple_mover.cpp.s
+.PHONY : src/simple_mover.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -477,6 +519,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... simple_mover"
 	@echo "... controller_manager_msgs_generate_messages_py"
 	@echo "... controller_manager_msgs_generate_messages_nodejs"
 	@echo "... controller_manager_msgs_generate_messages_eus"
@@ -500,6 +543,9 @@ help:
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... src/simple_mover.o"
+	@echo "... src/simple_mover.i"
+	@echo "... src/simple_mover.s"
 .PHONY : help
 
 
