@@ -753,6 +753,19 @@ simple_arm_generate_messages_nodejs/fast:
 .PHONY : simple_arm_generate_messages_nodejs/fast
 
 #=============================================================================
+# Target rules for targets named process_image
+
+# Build rule for target.
+process_image: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 process_image
+.PHONY : process_image
+
+# fast build rule for target.
+process_image/fast:
+	$(MAKE) -f ball_chaser/CMakeFiles/process_image.dir/build.make ball_chaser/CMakeFiles/process_image.dir/build
+.PHONY : process_image/fast
+
+#=============================================================================
 # Target rules for targets named ball_chaser_generate_messages
 
 # Build rule for target.
@@ -979,6 +992,7 @@ help:
 	@echo "... simple_arm_generate_messages_cpp"
 	@echo "... simple_arm_generate_messages_lisp"
 	@echo "... simple_arm_generate_messages_nodejs"
+	@echo "... process_image"
 	@echo "... ball_chaser_generate_messages"
 	@echo "... ball_chaser_gencpp"
 	@echo "... _ball_chaser_generate_messages_check_deps_DriveToTarget"
